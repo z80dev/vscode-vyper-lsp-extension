@@ -36,4 +36,4 @@ if debugger_path:
 
 SERVER_PATH = os.fspath(pathlib.Path(__file__).parent / "lsp_server.py")
 # NOTE: Set breakpoint in `lsp_server.py` before continuing.
-runpy.run_path(SERVER_PATH, run_name="__main__")
+runpy.run_module("vyper_lsp", run_name="__main__")
