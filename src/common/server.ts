@@ -47,7 +47,7 @@ async function createServer(
 
     const args =
         newEnv.USE_DEBUGPY === 'False' || !isDebugScript
-            ? settings.interpreter.slice(1).concat([' -m vyper_lsp'])
+            ? settings.interpreter.slice(1).concat([SERVER_SCRIPT_PATH])
             : settings.interpreter.slice(1).concat([DEBUG_SERVER_SCRIPT_PATH]);
     traceInfo(`Server run command: ${[command, ...args].join(' ')}`);
 

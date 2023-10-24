@@ -1,22 +1,22 @@
 {
-    "name": "vyper_lsp",
+    "name": "vyperlsp",
     "displayName": "vyper-lsp",
     "description": "Linting support for python files using `vyper_lsp`.",
-    "version": "2022.0.0-dev",
+    "version": "0.0.2",
     "preview": true,
     "serverInfo": {
         "name": "vyper-lsp",
         "module": "vyper_lsp"
     },
-    "publisher": "Vyper",
+    "publisher": "z80dev",
     "license": "MIT",
-    "homepage": "https://github.com/<my-github>/<my-extension-project>",
+    "homepage": "https://github.com/z80dev/vscode-vyper-lsp-extension",
     "repository": {
         "type": "git",
-        "url": "https://github.com/<my-github>/<my-extension-project>.git"
+        "url": "https://github.com/z80dev/vscode-vyper-lsp-extension.git"
     },
     "bugs": {
-        "url": "https://github.com/<my-github>/<my-extension-project>/issues"
+        "url": "https://github.com/z80dev/vscode-vyper-lsp-extension/issues"
     },
     "galleryBanner": {
         "color": "#1e415e",
@@ -24,15 +24,16 @@
     },
     "keywords": [
         "python",
-        "vyper_lsp"
+        "vyper_lsp",
+        "vyperlsp",
+        "vyper",
+        "vyper lsp"
     ],
     "engines": {
         "vscode": "^1.78.0"
     },
     "categories": [
-        "Programming Languages",
-        "Linters",
-        "Formatters"
+        "Programming Languages"
     ],
     "extensionDependencies": [
         "ms-python.python"

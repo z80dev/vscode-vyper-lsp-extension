@@ -46,13 +46,13 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
     // Log Server information
     traceLog(`Name: ${serverInfo.name}`);
     traceLog(`Module: ${serverInfo.module}`);
-    traceVerbose(`Full Server Info: ${JSON.stringify(serverInfo)}`);
+    traceLog(`Full Server Info: ${JSON.stringify(serverInfo)}`);
 
     const runServer = async () => {
         const interpreter = getInterpreterFromSetting(serverId);
         if (interpreter && interpreter.length > 0) {
             if (checkVersion(await resolveInterpreter(interpreter))) {
-                traceVerbose(`Using interpreter from ${serverInfo.module}.interpreter: ${interpreter.join(' ')}`);
+                traceLog(`Using interpreter from ${serverInfo.module}.interpreter: ${interpreter.join(' ')}`);
                 lsClient = await restartServer(serverId, serverName, outputChannel, lsClient);
             }
             return;
@@ -60,7 +60,7 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
 
         const interpreterDetails = await getInterpreterDetails();
         if (interpreterDetails.path) {
-            traceVerbose(`Using interpreter from Python extension: ${interpreterDetails.path.join(' ')}`);
+            traceLog(`Using interpreter from Python extension: ${interpreterDetails.path.join(' ')}`);
             lsClient = await restartServer(serverId, serverName, outputChannel, lsClient);
             return;
         }

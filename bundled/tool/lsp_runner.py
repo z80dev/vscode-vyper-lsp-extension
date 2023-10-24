@@ -8,6 +8,7 @@ import os
 import pathlib
 import sys
 import traceback
+from bundled.tool.lsp_server import log_to_output
 
 
 # **********************************************************
@@ -25,7 +26,7 @@ def update_sys_path(path_to_add: str, strategy: str) -> None:
 # Ensure that we can import LSP libraries, and other bundled libraries.
 update_sys_path(
     os.fspath(pathlib.Path(__file__).parent.parent / "libs"),
-    os.getenv("LS_IMPORT_STRATEGY", "useBundled"),
+    os.getenv("LS_IMPORT_STRATEGY", "fromEnvironment"),
 )
 
 
@@ -38,6 +39,8 @@ RPC = jsonrpc.create_json_rpc(sys.stdin.buffer, sys.stdout.buffer)
 EXIT_NOW = False
 while not EXIT_NOW:
     msg = RPC.receive_data()
+    print(f"msg: {msg}", file=sys.stderr)
+    log_to_output(f"msg: {msg}")
 
     method = msg["method"]
     if method == "exit":

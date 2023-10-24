@@ -6,6 +6,7 @@ import os
 import pathlib
 import runpy
 import sys
+import vyper_lsp
 
 
 def update_sys_path(path_to_add: str) -> None:

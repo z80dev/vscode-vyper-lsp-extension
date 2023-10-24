@@ -16,3 +16,4 @@ packaging
 vyper
 lark
 lsprotocol
+vyper-lsp
