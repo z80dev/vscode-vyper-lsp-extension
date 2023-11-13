@@ -169,7 +169,7 @@ lark==1.1.8 \
     --hash=sha256:7d2c221a66a8165f3f81aacb958d26033d40d972fdb70213ab0a2e0627e29c86 \
     --hash=sha256:7ef424db57f59c1ffd6f0d4c2b705119927f566b68c0fe1942dddcc0e44391a5
     # via
-    #   -r ./requirements.in
+    #   -r requirements.in
     #   vyper-lsp
 loguru==0.6.0 \
     --hash=sha256:066bd06758d0a513e9836fd9c6b5a75bfb3fd36841f4b996bc60b547a309d41c \
@@ -179,13 +179,13 @@ lsprotocol==2023.0.0b1 \
     --hash=sha256:ade2cd0fa0ede7965698cb59cd05d3adbd19178fd73e83f72ef57a032fbb9d62 \
     --hash=sha256:f7a2d4655cbd5639f373ddd1789807450c543341fa0a32b064ad30dbb9f510d4
     # via
-    #   -r ./requirements.in
+    #   -r requirements.in
     #   vyper-lsp
 packaging==23.2 \
     --hash=sha256:048fb0e9405036518eaaf48a55953c750c11e1a1b68e0dd1a9d62ed0c092cfc5 \
     --hash=sha256:8c491190033a9af7e1d931d0b5dacc2ef47509b34dd0de67ed209b5203fc88c7
     # via
-    #   -r ./requirements.in
+    #   -r requirements.in
     #   vvm
     #   vyper
     #   vyper-lsp
@@ -267,7 +267,7 @@ pygls==0.13.1 \
     --hash=sha256:37a1b5a45fe8934d992412f11d84d69d2ede55b52df2e34e6aa9342e5308d20e \
     --hash=sha256:b2d3f5cbf3d0e5dfa88b9150a371e3a0e619d7f25b77113aba4ca746c8385a66
     # via
-    #   -r ./requirements.in
+    #   -r requirements.in
     #   vyper-lsp
 requests==2.31.0 \
     --hash=sha256:58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f \
@@ -360,12 +360,12 @@ vyper==0.3.10 \
     --hash=sha256:05636302341bf89602b19f749fcabc8d184a265d8eea4a45c20b3259780353b0 \
     --hash=sha256:8dc1f501caab417fb0ce9c68a6944587f0147ec7cc7d3889cf3a45c19466e489
     # via
-    #   -r ./requirements.in
+    #   -r requirements.in
     #   vyper-lsp
-vyper-lsp==0.0.1b1 \
-    --hash=sha256:86e2dc8e248976e77e73b747810b55e87fb83e43458919a2326a4c7bad0c6393 \
-    --hash=sha256:918bd2d9add64a1dfc0d7150d12cb279866a0f1b2ab6e1267dcff55ce2066a2d
-    # via -r ./requirements.in
+vyper-lsp==0.0.3 \
+    --hash=sha256:bf82d419727efb17d21ec744c9406d82db2bf8deafbf467a9f6a5717713ff574 \
+    --hash=sha256:ece09eff4a71a0a8f8a515e276bf62980f5116dff4332c430c5e4302c48412dc
+    # via -r requirements.in
 wheel==0.41.2 \
     --hash=sha256:0c5ac5ff2afb79ac23ab82bab027a0be7b5dbcf2e54dc50efe4bf507de1f7985 \
     --hash=sha256:75909db2664838d015e3d9139004ee16711748a52c8f336b52882266540215d8
