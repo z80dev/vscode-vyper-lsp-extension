@@ -45,8 +45,8 @@
         }
     },
     "activationEvents": [
-        "onLanguage:python",
-        "workspaceContains:*.py"
+        "onLanguage:vyper",
+        "workspaceContains:*.vy"
     ],
     "main": "./dist/extension.js",
     "scripts": {
